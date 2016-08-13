@@ -5,8 +5,7 @@ SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 if [[ $TRAVIS_OS_NAME = "linux" ]]
 then
-    echo "Do not pull"
-    #docker pull bioconda/bioconda-builder
+    docker pull bgruening/bioconda-builder
 else
 
     # install conda
